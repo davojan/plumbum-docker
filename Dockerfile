@@ -12,3 +12,5 @@ ONBUILD COPY *.py ./
 
 ONBUILD RUN chmod a+x *.py && \
             python -OO -m compileall -l ./
+
+ENTRYPOINT ["python"]
