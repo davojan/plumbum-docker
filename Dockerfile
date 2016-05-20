@@ -6,7 +6,9 @@ RUN pip install --upgrade pip
 
 RUN pip install plumbum
 
-ONBUILD COPY *.py /root/
+WORKDIR /root/
 
-ONBUILD RUN chmod a+x /root/*.py && \
-            python -OO -m compileall -l /root/
+ONBUILD COPY *.py ./
+
+ONBUILD RUN chmod a+x *.py && \
+            python -OO -m compileall -l ./
