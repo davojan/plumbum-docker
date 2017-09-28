@@ -1,10 +1,10 @@
-FROM python:3.5-alpine
+FROM python:3.6-alpine3.6
 
-MAINTAINER davojan
+MAINTAINER Procraft Team
 
 RUN pip install --upgrade pip
 
-RUN pip install plumbum
+RUN pip install 'plumbum==1.6.3'
 
 WORKDIR /root/
 

@@ -12,7 +12,7 @@ docker run --rm derived/image some-script.py
 
 Examples of derived images:
 
-* https://github.com/davojan/s3-backuper-docker
+* https://github.com/procraft/s3-backuper-docker
 * https://github.com/davojan/jetbrains-backup-scripts-docker
 
 Based on ``python:3.5-alpine`` image.
